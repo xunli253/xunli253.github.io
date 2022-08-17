@@ -1,0 +1,232 @@
+/* --------------Global Styles ---------------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: 'caveat', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+
+/* ----------------------------Navigation--------------------------- */
+nav {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #2B2D42;
+}
+
+
+@media (min-width:440px) {
+    nav a {
+        margin: 14px;
+        font-size: 16px;
+    }
+}
+
+/* -----------------------Header Only------------------------------- */
+
+header {
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    background-color: #2B2D42;
+    color: #8D99AE;
+}
+
+header h1,
+header h2 {
+    color: #EDF2F4;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+.content-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 60px 50px;
+    max-width: 950px;
+    overflow: hidden;
+}
+
+@media(min-width: 935px) {
+    .content-wrap {
+        flex-direction: row;
+    }
+}
+
+.profile-img {
+    width: 200px;
+
+    border-radius: 50%;
+}
+
+@media (min-width: 440px) {
+    .profile-img {
+        width: 250px;
+
+    }
+}
+
+@media (min-width: 935px) {
+    .profile-img {
+        width: 300px;
+
+    }
+}
+
+.btn {
+    text-decoration: none;
+    background: #EF233C;
+    color: white;
+    padding: 0 5px;
+}
+
+@media (min-width: 440px) {
+    .btn {
+        padding: 10px;
+    }
+}
+
+.download {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* -----------------------------------------Work---------------------------------------- */
+
+.work-experience {
+    padding-top: 40px;
+    background-color: #EDF2F4;
+}
+
+
+.work-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+.job-wrapper {
+    display: block;
+    padding-bottom: 30px;
+}
+
+
+@media(min-width: 935px) {
+    .job-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        column-gap: 30px;
+    }
+}
+
+
+
+h3~p {
+    margin: 0;
+}
+
+@media(min-width: 935px) {
+    .job-description p:first-of-type {
+        margin-top: 0;
+    }
+}
+
+ol li a {
+    margin: 8px 0;
+    padding-left: 15px;
+}
+
+ol li a {
+    color: blue;
+}
+
+
+/* -------------------------------------Education------------------------------- */
+.education {
+    padding: 40px 0;
+    background: linear-gradient(rgba(141, 153, 174, 0.9), rgba(141, 153, 174, 0.7)), url(./assets/earth.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+.education-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+/* -------------------------------------Footer------------------------------- */
+footer {
+    text-align: center;
+    background-color: #2B2D42;
+    color: #8D99AE;
+}
+
+.contact-wrapper {
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 900px;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.media-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: #8D99AE solid 2px;
+}
+
+.media-pic:hover {
+    transform: scale(1.1);
+}
+
+p+h3 {
+    margin-top: 30px;
+}
+
+footer p {
+    margin-top: 50px;
+}
